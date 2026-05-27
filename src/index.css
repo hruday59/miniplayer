@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&family=Outfit:wght@400;600;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-brand-bg: #0B0E14;
+  --color-brand-sidebar: #0D111A;
+  --color-brand-cyan: #00FFFF;
+  --color-brand-magenta: #FF00FF;
+  --color-brand-yellow: #facc15;
+}
+
+/* Theme Utilities matching the Vibrant Palette aesthetic */
+.neon-text {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.neon-text-magenta {
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+.neon-border {
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+  border: 1px solid rgba(255, 0, 255, 0.5);
+}
+
+.neon-border-cyan {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.game-card-styled {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.game-card-styled:hover {
+  transform: translateY(-4px);
+  border-color: #00ffff;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Custom styling for clipping triangles inside daily spin dials */
+.clip-triangle {
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+/* Glassmorphism subtle scrolls */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0E14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A1F2C;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00FFFF;
+}
+

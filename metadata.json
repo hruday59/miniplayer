@@ -1,0 +1,6 @@
+{
+  "name": "appyday",
+  "description": "A premium modern casual gaming arcade with interactive mini-games, dynamic account stats, and a custom neon UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
